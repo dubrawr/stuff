@@ -1,0 +1,91 @@
+.main {
+  width: 500px;
+  margin: 0 auto;
+  font-family: Oswald, helvetica, sans-serif;
+}
+
+
+span {
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+div {
+  color: white;
+}
+
+.logo {
+  text-align: center;
+}
+
+.list {
+  margin-top: 2em;
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid #d46641;
+  height: 500px;
+  overflow: auto;
+}
+
+.empty-line {
+  background-color: #5e5e5e;
+  width: 90%;
+  height: 40px;
+  margin: 0.5em auto;
+  line-height: 40px
+}
+
+.list-item {
+  text-align: center;
+  background-color: #d46641;
+  width: 90%;
+  height: 40px;
+  margin: 0.5em auto;
+  line-height: 40px
+}
+
+.checked-item {
+  text-align: center;
+  background-color: #a5a5a5;
+  width: 90%;
+  height: 40px;
+  margin: 0.5em auto;
+  line-height: 40px;
+}
+
+.button {
+  float: right;
+  margin: 5.5px 4px;
+  vertical-align: middle;
+}
+
+.checked-item > span,
+.list-item > span {
+  padding-left: 28px;
+}
+
+.x {
+  float: left;
+  margin: 0 2px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.checked-item > span {
+  text-decoration: line-through;
+}
+
+input {
+  width: 500px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #d46641;
+  text-align: center;
+  font-family: Oswald, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
