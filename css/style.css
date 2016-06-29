@@ -54,7 +54,7 @@ div {
   line-height: 40px;
 }
 
-.button {
+.cbutton, .abutton {
   float: right;
   margin: 5.5px 4px;
   vertical-align: middle;
