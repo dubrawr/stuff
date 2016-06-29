@@ -28,13 +28,13 @@ div {
 }
 
 
-.empty-line {
+/*.empty-line {
   background-color: #5e5e5e;
   width: 90%;
   height: 40px;
   margin: 0.5em auto;
   line-height: 40px
-}
+}*/
 
 .list-item {
   text-align: center;
@@ -74,7 +74,7 @@ div {
 }
 
 .checked-item > span {
-  text-decoration: line-through;
+  text-decoration: line-through; 
 }
 
 input {
@@ -93,3 +93,4 @@ input[type=text]:focus {
 
 ul {padding: 0;}
 li {width: 500px; height: 40px; display: block;}
+
