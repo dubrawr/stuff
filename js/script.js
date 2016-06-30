@@ -20,9 +20,8 @@ $(document).ready(function() {
   
     $('ul').on('click', '.cbutton', function(event) {
       event.preventDefault();
-      $(this).closest('li').remove();
-        var clickeditem = $(this).closest('li').text();
-    $('ul').append('<li><div class="checked-item"><img class="x" src="images/x.png"><span>' + clickeditem + '</span><img class="abutton" src="images/add.png"></div></li>');
+      	var clickeditem = $(this).closest('li').text();
+   		$(this).closest('li').replaceWith('<li><div class="checked-item"><img class="x" src="images/x.png"><span>' + clickeditem + '</span><img class="abutton" src="images/add.png"></div></li>');
 
   });
 
@@ -30,12 +29,14 @@ $(document).ready(function() {
  
     $('ul').on('click', '.abutton', function(event) {
       event.preventDefault();
-      $(this).closest('li').remove()
-       var additem = $(this).closest('li').text();
-    $('ul').append('<li><div class="list-item"><img class="x" src="images/x.png"><span>' + additem + '</span><img class="cbutton" src="images/check.png"></div></li>');
+      	var additem = $(this).closest('li').text();
+      	$(this).closest('li').replaceWith('<li><div class="list-item"><img class="x" src="images/x.png"><span>' + additem + '</span><img class="cbutton" src="images/check.png"></div></li>');
+      
+   
 
   });
 
     $('#sortable').sortable();
+    $('#sortable').disableSelection();
 
 });
