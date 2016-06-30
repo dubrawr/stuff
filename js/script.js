@@ -1,7 +1,7 @@
 $(document).ready(function() {
   console.log("ready!");
 
-  //to enter an item into the list
+  
   $('form').on('submit', function(event) {
     event.preventDefault();
     var newitem = $('[name="stuff"]').val();
@@ -36,9 +36,6 @@ $(document).ready(function() {
 
   });
 
-  // going to try sortable now BUT ITS NOT WORKING
-	$( '#sortable' ).sortable();
-	$( '#sortable' ).disableSelection();
+    $('#sortable').sortable();
 
 });
-
